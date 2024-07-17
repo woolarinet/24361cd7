@@ -47,19 +47,19 @@ const ActivityPage = () => {
   }
 
     const handleSelectCall = (id) => {
-      console.log(id,'ddasd')
       router.push(`/detail/${id}`)
-      // http.get(`/activities/${id}`).then(data => setSelectedCall(data)).catch(error => console.error('Error fetching call details:', error));
     };
 
     return (
         <div className='container'>
           <div className="tabs">
-            <button className={activeTab === 'inbox' ? 'active' : ''} onClick={() => setActiveTab('inbox')}>Inbox
-            </button>
-            <button className={activeTab === 'archived' ? 'active' : ''}
-                    onClick={() => setActiveTab('archived')}>Archived
-            </button>
+          <button className={activeTab === 'inbox' ? 'active' : ''} onClick={() => setActiveTab('inbox')}>
+            Inbox
+            {missedCallCount > 0 && <span className="missed-call-badge">{missedCallCount}</span>}
+          </button>
+          <button className={activeTab === 'archived' ? 'active' : ''} onClick={() => setActiveTab('archived')}>
+            Archived
+          </button>
           </div>
           <div className="container-view">
             {activeTab === 'inbox' ? (
