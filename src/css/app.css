@@ -1,0 +1,135 @@
+#app {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#app .container {
+  width: 376px;
+  height: 666px;
+  z-index: 100;
+
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#app .container-view {
+  padding: 20px;
+  height: calc(100% - 90px);
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #2AC420;
+  font-weight: bold;
+  color: black;
+}
+
+.tabs button:hover {
+  background-color: #f0f0f0;
+}
+
+.archive-all, .unarchive-all {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #2AC420;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.archive-all:hover, .unarchive-all:hover {
+  background-color: #28a745;
+}
+
+.activity-list {
+  padding: 10px;
+  height: calc(100% - 50px); /* Adjust height to fit the container */
+  overflow-y: auto;
+}
+
+.activity-date-group {
+  margin-bottom: 20px;
+}
+
+.activity-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.activity-group {
+  margin-bottom: 10px;
+}
+
+.activity-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.activity-group-header:hover {
+  background-color: #f0f0f0;
+}
+
+.group-count {
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.group-count.missed {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.group-count.not-missed {
+  background-color: #ccc;
+  color: black;
+}
+
+.activity-group-details {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* .bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+} */

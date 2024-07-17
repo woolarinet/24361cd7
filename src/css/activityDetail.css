@@ -1,0 +1,40 @@
+.activity-detail {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  margin-bottom: 20px;
+}
+
+.detail-grid {
+  margin-top: 10px;
+}
+
+.detail-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.detail-value {
+  color: #555;
+}
+
+.MuiTabs-indicator {
+  background-color: #1976d2;
+}
+
+.MuiTab-root {
+  text-transform: none;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #1976d2;
+}

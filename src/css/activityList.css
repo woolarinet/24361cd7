@@ -1,0 +1,58 @@
+.activity-list {
+  padding: 10px;
+  height: calc(100% - 50px); /* Adjust height to fit the container */
+  overflow-y: auto;
+}
+
+.activity-date-group {
+  margin-bottom: 20px;
+}
+
+.activity-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.activity-group {
+  margin-bottom: 10px;
+}
+
+.activity-group-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.activity-group-header:hover {
+  background-color: #f0f0f0;
+}
+
+.group-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group-count {
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.group-count.missed {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.group-count.not-missed {
+  background-color: #ccc;
+  color: black;
+}
+
+.activity-group-details {
+  margin-top: 10px;
+  padding-left: 20px;
+}

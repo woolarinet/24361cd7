@@ -1,0 +1,5 @@
+.archived-feed {
+  padding: 10px;
+  height: calc(100% - 50px); /* Adjust height to fit the container */
+  overflow-y: auto;
+}

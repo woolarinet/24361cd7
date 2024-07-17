@@ -1,0 +1,75 @@
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.activity-item:hover {
+  background-color: #f0f0f0;
+}
+
+.activity-item-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.activity-item-info {
+  display: flex;
+  align-items: center;
+}
+
+.call-icon {
+  margin-right: 10px;
+}
+
+.activity-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-from {
+  font-weight: bold;
+}
+
+.activity-to {
+  color: #888;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #888;
+  margin-left: auto;
+}
+
+.archive-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #2AC420;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.archive-button:hover {
+  background-color: #28a745;
+}
+
+.call-icon.missed {
+  color: red;
+}
+
+.call-icon.answered {
+  color: green;
+}
+
+.call-icon.voicemail {
+  color: blue;
+}
